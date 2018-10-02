@@ -15,7 +15,7 @@ setup(
         'requests',
         'waitress',
     ),
-    extras_requires={
+    extras_require={
         'dev': (
             'flake8',
             'pylint',
