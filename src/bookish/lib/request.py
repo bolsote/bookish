@@ -23,6 +23,9 @@ class Request:
         }
 
     def perform(self):
+        if not self.isbn.validate():
+            raise Exception
+
         response = requests.get(
             self.BASE_URI, params=self.params
         )
