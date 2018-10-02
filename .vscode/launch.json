@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Pyramid",
+            "type": "python",
+            "request": "launch",
+            "args": [
+                "${workspaceFolder}/dev.ini"
+            ],
+            "pyramid": true,
+            "jinja": true
+        }
+    ]
+}

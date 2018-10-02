@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang='es'>
+<head>
+    <title>Bookish</title>
+</head>
+
+<body>
+
+<h1>Bookish</h1>
+
+<form action="/" method="post">
+    <input type="text" name="isbn">
+
+    <input type="submit" value="Search">
+</form>
+
+{% if result is defined %}
+<p>Title: {{ result.title }}</p>
+<p>Author: {{ result.author }}</p>
+<p>Published: {{ result.date }}</p>
+<img src="{{ result.cover }}" />
+{% endif %}
+
+</body>
+</html>
