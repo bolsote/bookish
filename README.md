@@ -8,7 +8,7 @@ Only a working version of Python 3 and virtualenv is required.
 Wherever this repository is cloned, run:
 ```shell
 $ python -m venv ve
-$ . ve/bin/activate
+$ source ve/bin/activate
 (ve) $ pip install -e .[dev]
 ```
 
