@@ -20,11 +20,12 @@ setup(
             'flake8',
             'pylint',
             'pyramid_debugtoolbar',
+            'pyramid_flamegraph',
             'pytest',
             'pytest-cov',
         )
     },
-    python_required='>=3.5',
+    python_requires='>=3.5',
     zip_safe=True,
     entry_points={
         'paste.app_factory': [
