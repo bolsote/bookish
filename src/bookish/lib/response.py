@@ -1,4 +1,7 @@
-from pprint import pformat
+from io import BytesIO
+
+import requests
+from PIL import Image
 
 
 class Response:
@@ -22,4 +25,10 @@ class Response:
 
     @property
     def cover(self):
-        return self.data['cover']['large']
+        image_url = self.data['cover']['large']
+        image = requests.get(image_url)
+
+        saved_image = f'static/{self.data["identifiers"]["isbn_13"][0]}.png'
+        Image.open(BytesIO(image.content)).save(saved_image)
+
+        return saved_image

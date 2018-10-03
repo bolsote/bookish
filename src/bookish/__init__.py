@@ -9,4 +9,6 @@ def main(_, **settings):
     config.add_route('search', '/')
     config.scan('bookish.views')
 
+    config.add_static_view(name='static', path='../../static')
+
     return config.make_wsgi_app()

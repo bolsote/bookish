@@ -16,10 +16,11 @@
 </form>
 
 {% if result is defined %}
-<p>Title: {{ result.title }}</p>
-<p>Author: {{ result.author }}</p>
-<p>Published: {{ result.date }}</p>
-<img src="{{ result.cover }}" />
+    <p>Title: {{ result.title }}</p>
+    <p>Author: {{ result.author }}</p>
+    <p>Published: {{ result.date }}</p>
+
+    <img src="{{ result.cover }}" />
 {% endif %}
 
 </body>

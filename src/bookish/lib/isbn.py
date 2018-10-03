@@ -4,9 +4,9 @@ import itertools
 class ISBN:
     def __init__(self, isbn):
         self.clean = isbn.replace('-', '')
-        self.parsed = self.parse(self.clean)
+        self.parsed = self.parse()
 
-    def parse(self, isbn):
+    def parse(self):
         return [int(digit) for digit in self.clean]
 
     def validate(self):
