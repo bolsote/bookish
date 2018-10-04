@@ -20,10 +20,12 @@ setup(
         'dev': (
             'flake8',
             'pylint',
+            'pyquery',
             'pyramid_debugtoolbar',
             'pyramid_flamegraph',
             'pytest',
             'pytest-cov',
+            'webtest',
         )
     },
     python_requires='>=3.5',

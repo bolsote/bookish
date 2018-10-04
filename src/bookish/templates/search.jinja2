@@ -16,11 +16,13 @@
 </form>
 
 {% if result is defined %}
-    <p>Title: {{ result.title }}</p>
-    <p>Author: {{ result.author }}</p>
-    <p>Published: {{ result.date }}</p>
+<div class="result">
+    <p class="title">Title: {{ result.title }}</p>
+    <p class="author">Author: {{ result.author }}</p>
+    <p class="date">Published: {{ result.date }}</p>
 
-    <img src="{{ result.cover }}" />
+    <img class="cover" src="{{ result.cover }}" />
+</div>
 {% endif %}
 
 </body>
